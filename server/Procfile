@@ -1,0 +1,2 @@
+prisma: docker-compose down && docker-compose up
+server: yarn dev

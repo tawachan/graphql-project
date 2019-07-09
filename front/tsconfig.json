@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "es6"
+    ],
+    "module": "es6",
+    "noImplicitReturns": true,
+    "outDir": "lib",
+    "sourceMap": true,
+    "target": "es6",
+    "jsx": "react"
+  },
+  "compileOnSave": true,
+  "include": [
+    "pages"
+  ],
+}

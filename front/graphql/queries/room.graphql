@@ -1,0 +1,12 @@
+query Rooms {
+  privateRooms: rooms(where: { status: PRIVATE }) {
+    id
+    name
+    status
+  }
+  publicRooms: rooms(where: { status: PUBLIC }) {
+    id
+    name
+    status
+  }
+}

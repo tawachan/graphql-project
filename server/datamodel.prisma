@@ -1,0 +1,23 @@
+type Room {
+  id: ID! @id
+  name: String @unique
+  status: RoomStatus @default(value: PUBLIC)
+}
+
+type Chat {
+  id: ID! @id
+  text: String!
+
+  room: Room @relation(link: INLINE)
+}
+
+enum RoomStatus {
+  PUBLIC
+  LIMITED
+  PRIVATE
+}
+
+type User {
+  id: ID! @id
+  name: String!
+}
